@@ -1,0 +1,49 @@
+{% extends "productos/base.html" %}
+{% load static %}
+
+{% block title %} Index {% endblock %}
+
+
+{% block content %}
+<div class="row">
+            <p>Destacado</p>
+        </div>
+        <div class="row">
+            <!--Carrusel de materialize imagenes destacadas(class="carousel")-->
+            <div class="carousel">
+                <div class="carousel-item">
+                    <!--Imagen 1 carrusel materialize-->
+                    <img src="{% static 'img/beyond-hamburguesa.png' %}" alt="">
+                </div>
+                <div class="carousel-item">
+                    <!--Imagen 2 carrusel materialize-->
+                    <img src="{% static 'img/manjar-cacao.png' %}" alt="">
+                </div>
+                <div class="carousel-item">
+                    <!--Imagen 3 carrusel materialize-->
+                    <img src="{% static 'img/queso-merken.png' %}" alt="">
+                </div>
+                <div class="carousel-item">
+                    <!--Imagen 4 carrusel materialize-->
+                    <img src="{% static 'img/beyond-sausage.png' %}" alt="">
+                </div>
+                <div class="carousel-item">
+                    <!--Imagen 5 carrusel materialize-->
+                    <img src="{% static 'img/leche-coco.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+
+        <h2>Medios de pago aceptados:</h2>
+        <!--Imagen redcompra-->
+        <img id="red" src="{% static 'img/redcompra-visa.png' %}" alt="">
+
+{% endblock %}
+
+
+{% block javascript %}
+<script>
+    $(document).ready(function(){
+    $('.carousel').carousel();});
+</script>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "productos/base.html" %}
+
+{% block title %} Productos {% endblock %}
+
+
+{% block content %}
+    <h2>Categorías</h2>
+        <div class="sidebar">
+            <h3>Categorías</h3>
+            <ul id="cat-list">
+                <li>
+                    <a href="{% url 'beyond' %}">BeyondMeat</a>
+                </li>
+                <li>
+                    <a href="{% url 'conservas' %}">Conservas</a>
+                </li>
+                <li>
+                    <a href="{% url 'quesos' %}">Quesos</a>
+                </li>
+            </ul>
+        </div>
+
+
+{% endblock %}
+
+
+{% block javascript %}
+
+{% endblock %}

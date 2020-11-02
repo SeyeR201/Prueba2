@@ -1,0 +1,66 @@
+{% extends "productos/base.html" %}
+{% load static %}
+
+{% block title %} Productos {% endblock %}
+
+
+{% block content %}
+<h2>Quesos</h2>
+        <!--Cuadrícula de página(grid)-->
+<div class="grid">
+    <!--Division de cuadrícula 20%(class="width-20")-->
+    <div class="width-20">
+        <!--Barra de categorías de productos(sidebar)-->
+        <div class="sidebar">
+            <h3>Categorías</h3>
+            <ul id="cat-list" class="hidden-phone">
+                <li>
+                    <a href="{% url 'beyond' %}">BeyondMeat</a>
+                    <!--Categoría 1-->
+                </li>
+                <li>
+                    <a href="{% url 'conservas' %}">Conservas</a>
+                    <!--Categoría 2-->
+                </li>
+                <li>
+                    <a href="{% url 'quesos' %}">Quesos</a>
+                    <!--Categoría 3-->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Division de cuadrícula 80%(class="width-80")-->
+    <div class="width-80">
+        <div class="row">
+            <div class="col s2">
+                <img src="{% static 'img/queso-parma.png' %}" class="responsive-img card materialboxed" alt="">
+                <!--Imagen y descripción 1-->
+                <a>Pepilu Queso Parma de Castaña $4.500</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2">
+                <img src="{% static 'img/queso-merken.png' %}" class="responsive-img card materialboxed" alt="">
+                <!--Imagen y descripción 2-->
+                <a>Pepilu Queso Merkén Ahumado $3.500</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2">
+                <img src="{% static 'img/queso-hierbas.png' %}" class="responsive-img card materialboxed" alt="">
+                <!--Imagen y descripción 3-->
+                <a>Pepilu Queso Finas Hierbas $3.500</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block javascript %}
+<script>
+    $(document).ready(function(){
+    $('.materialboxed').materialbox();});
+</script>
+{% endblock %}
