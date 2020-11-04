@@ -1,0 +1,24 @@
+{% extends "productos/base.html" %}
+{% load static %}
+{% block title %} Producto Eliminado{% endblock %}
+
+
+
+{% block content %}
+<h1 align="center">Producto eliminado correctamente</h1>
+<br><br>
+<div align="center">
+    <a href="{% url 'index' %}">Inicio</a>
+</div>
+
+
+
+{% endblock %}
+
+
+{% block javascript %}
+    <script>
+        $(document).ready(function(){
+        $('.materialboxed').materialbox();});
+    </script>
+{% endblock %}

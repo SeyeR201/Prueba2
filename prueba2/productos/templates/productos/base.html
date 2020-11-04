@@ -24,7 +24,15 @@
           <ul id="nav-mobile" class="right">
             <li><a href="{% url 'index' %}">Inicio</a></li>
             <li><a href="{% url 'products' %}">Productos</a></li>
-            <li><a href="#">Registrarse</a></li>
+            <li><a href="{% url 'agregar' %}">Agregar Productos Productos</a></li>
+            <li><a href="{% url 'editar' %}">Editar Productos</a></li>
+            <li><a href="{% url 'eliminar' %}">Eliminar Productos</a></li>
+            <li><a href="{% url 'mostrar_productos' %}">Listar Productos</a></li>
+            {% if user.is_authenticated %}
+              <li><a href="#">Sesion iniciada: {{ user.username }}</a></li>
+              <li><a href="/accounts/logout">Cerrar sesión</a></li>
+            {% endif %}
+            <li><a href="/accounts/register">Registrarse</a></li>
           </ul>
         </div>
     </nav>
@@ -42,6 +50,7 @@
     <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
       <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/iniciador.js' %}"></script>
 
     {% block javascript %}
 

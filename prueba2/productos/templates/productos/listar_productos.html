@@ -1,0 +1,44 @@
+{% extends "productos/base.html" %}
+{% load static %}
+
+{% block title %} Listar productos {% endblock %}
+
+
+{% block content %}
+    <h2>Listado de Productos</h2>
+
+        <br>
+        Productos en stock:
+        <br>
+
+        {% for producto in listado %}
+
+        <br>
+        <br>
+
+        Marca: {{ producto.nombre_producto }}
+        <br>
+        Descripción: {{ producto.descripcion_producto }}
+        <br>
+        Precio: ${{ producto.precio }}
+        <br>
+        Stock: {{ producto.stock }}
+        <br>
+        <div class="row">
+            <div class="col s1">
+                Foto: <img src="{{ producto.foto_producto.url }}" class="responsive-img card materialboxed" alt="" srcset="">
+            </div>
+        </div>
+
+        <br>
+
+        {% endfor %}
+
+
+
+{% endblock %}
+
+
+{% block javascript %}
+
+{% endblock %}

@@ -11,26 +11,11 @@
         <div class="row">
             <!--Carrusel de materialize imagenes destacadas(class="carousel")-->
             <div class="carousel">
-                <div class="carousel-item">
-                    <!--Imagen 1 carrusel materialize-->
-                    <img src="{% static 'img/beyond-hamburguesa.png' %}" alt="">
-                </div>
-                <div class="carousel-item">
-                    <!--Imagen 2 carrusel materialize-->
-                    <img src="{% static 'img/manjar-cacao.png' %}" alt="">
-                </div>
-                <div class="carousel-item">
-                    <!--Imagen 3 carrusel materialize-->
-                    <img src="{% static 'img/queso-merken.png' %}" alt="">
-                </div>
-                <div class="carousel-item">
-                    <!--Imagen 4 carrusel materialize-->
-                    <img src="{% static 'img/beyond-sausage.png' %}" alt="">
-                </div>
-                <div class="carousel-item">
-                    <!--Imagen 5 carrusel materialize-->
-                    <img src="{% static 'img/leche-coco.png' %}" alt="">
-                </div>
+                <a class="carousel-item"><img src="{% static 'img/beyond-hamburguesa.png' %}" alt=""></a>
+                <a class="carousel-item"><img src="{% static 'img/manjar-cacao.png' %}" alt=""></a>
+                <a class="carousel-item"><img src="{% static 'img/queso-merken.png' %}" alt=""></a>
+                <a class="carousel-item"><img src="{% static 'img/beyond-sausage.png' %}" alt=""></a>
+                <a class="carousel-item"><img src="{% static 'img/leche-coco.png' %}" alt=""></a>
             </div>
         </div>
 
@@ -42,8 +27,5 @@
 
 
 {% block javascript %}
-<script>
-    $(document).ready(function(){
-    $('.carousel').carousel();});
-</script>
+
 {% endblock %}
