@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Producto
+from django.db.models import Q
+from django.contrib.auth.decorators import login_required, permission_required
 
 # Create your views here.
 
@@ -28,6 +30,7 @@ def quesos(request):
     context={}
     return render(request, 'productos/quesos.html', context)
 
+@permission_required('productos.add_productos')
 def agregar(request):
     print("vista: agregar")
     context={}
@@ -65,6 +68,7 @@ def agregar_productos(request):
     else:
         return render(request, 'productos/error.html', {})
 
+@permission_required('productos.delete_productos')
 def eliminar(request):
     print("ok, vista: eliminar")
     context={}
@@ -93,6 +97,7 @@ def eliminar_producto(request):
     else:
         return render(request, 'productos/error.html', {})
 
+@permission_required('productos.change_productos')
 def editar(request):
     print("ok, vista: editar")
     context={}
@@ -153,9 +158,9 @@ def editar_productos(request):
     else:
         return render(request, 'productos/error.html', {})
 
-
+@permission_required('productos.view_productos')
 def mostrar_productos(request):
     print("vista: mostrar_productos")
-    lista = Producto.objects.all()
+    lista = Producto.objects.filter(~Q(stock = 0))
     context={'listado': lista}
     return render(request, 'productos/listar_productos.html', context)

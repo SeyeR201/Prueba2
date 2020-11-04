@@ -29,10 +29,12 @@
             <li><a href="{% url 'eliminar' %}">Eliminar Productos</a></li>
             <li><a href="{% url 'mostrar_productos' %}">Listar Productos</a></li>
             {% if user.is_authenticated %}
-              <li><a href="#">Sesion iniciada: {{ user.username }}</a></li>
+              <li><a href="#">Usuario: {{ user.username }}</a></li>
               <li><a href="/accounts/logout">Cerrar sesión</a></li>
+            {% else %}
+              <li><a href="/accounts/login">Iniciar sesión</a></li>
+              <li><a href="/accounts/register">Registrarse</a></li>
             {% endif %}
-            <li><a href="/accounts/register">Registrarse</a></li>
           </ul>
         </div>
     </nav>

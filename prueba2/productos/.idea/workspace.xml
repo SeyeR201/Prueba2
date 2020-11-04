@@ -19,16 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab89b11a-2451-4e45-85ff-fde7c876b6fe" name="Default Changelist" comment="" />
+    <list default="true" id="1e8e0dc3-37d0-4c13-96be-1b9e773a1e0a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/productos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/productos/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/productos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/productos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/productos/.idea/productos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/productos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/productos/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/productos/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/productos/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../templates/registration/registration_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../templates/registration/registration_complete.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1jpd1a5X3KlgPsg4L53d8OemDaf" />
+  <component name="ProjectId" id="1jpjzCm77XdF3hDcQS7YMyHjdvD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,11 +52,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ab89b11a-2451-4e45-85ff-fde7c876b6fe" name="Default Changelist" comment="" />
-      <created>1604504753025</created>
+      <changelist id="1e8e0dc3-37d0-4c13-96be-1b9e773a1e0a" name="Default Changelist" comment="" />
+      <created>1604508188779</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604504753025</updated>
+      <updated>1604508188779</updated>
     </task>
     <servers />
   </component>
