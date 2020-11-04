@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load i18n %}
 
+{% block title%} Registrar Usuario {% endblock %}
 
   {% block content %}
 
@@ -10,6 +11,7 @@
           {{ form.as_p }}
 
           <input type="submit" value="{% trans 'Enviar' %}" />
+          <p><a href="/productos/index">Inicio</a></p></p>
         </form>
 
 

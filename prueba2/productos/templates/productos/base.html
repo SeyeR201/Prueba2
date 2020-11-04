@@ -24,11 +24,11 @@
           <ul id="nav-mobile" class="right">
             <li><a href="{% url 'index' %}">Inicio</a></li>
             <li><a href="{% url 'products' %}">Productos</a></li>
-            <li><a href="{% url 'agregar' %}">Agregar Productos Productos</a></li>
-            <li><a href="{% url 'editar' %}">Editar Productos</a></li>
-            <li><a href="{% url 'eliminar' %}">Eliminar Productos</a></li>
-            <li><a href="{% url 'mostrar_productos' %}">Listar Productos</a></li>
             {% if user.is_authenticated %}
+              <li><a href="{% url 'agregar' %}">Agregar Productos Productos</a></li>
+              <li><a href="{% url 'editar' %}">Editar Productos</a></li>
+              <li><a href="{% url 'eliminar' %}">Eliminar Productos</a></li>
+              <li><a href="{% url 'listar' %}">Listar Productos</a></li>
               <li><a href="#">Usuario: {{ user.username }}</a></li>
               <li><a href="/accounts/logout">Cerrar sesión</a></li>
             {% else %}

@@ -1,0 +1,35 @@
+{% extends "productos/base.html" %}
+{% load static %}
+{% block title %} Listar Productos {% endblock %}
+
+
+
+{% block content %}
+
+    <h1>Listar Productos</h1>
+        <br>
+
+        <form action="mostrar_productos" method="POST">
+            {% csrf_token %}
+            <label>Productos Disponibles: </label>
+            <input type="submit"  name="opcion" value="listar">
+
+        </form>
+        <br>
+        <br>
+        <form action="mostrar_productos_ns" method="POST">
+            {% csrf_token %}
+            <label>Productos Sin Stock: </label>
+            <input type="submit"  name="opcion" value="listar">
+
+        </form>
+
+{% endblock %}
+
+
+{% block javascript %}
+    <script>
+        $(document).ready(function(){
+        $('.materialboxed').materialbox();});
+    </script>
+{% endblock %}

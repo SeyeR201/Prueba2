@@ -158,9 +158,19 @@ def editar_productos(request):
     else:
         return render(request, 'productos/error.html', {})
 
-@permission_required('productos.view_productos')
 def mostrar_productos(request):
     print("vista: mostrar_productos")
     lista = Producto.objects.filter(~Q(stock = 0))
     context={'listado': lista}
     return render(request, 'productos/listar_productos.html', context)
+
+def mostrar_productos_ns(request):
+    print("vista: mostrar_productos_ns")
+    lista = Producto.objects.filter(stock = 0)
+    context={'listado': lista}
+    return render(request, 'productos/listar_productos.html', context)
+
+def listar(request):
+    print("vista: listar.")
+    context={}
+    return render(request, 'productos/listar.html', context)
