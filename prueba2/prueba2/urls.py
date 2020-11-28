@@ -25,6 +25,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('productos/', include('productos.urls')),
     path('admin/', admin.site.urls),
+    path('oauth/', include('social_django.urls', namespace='social')),
+    path('', include('pwa.urls')),
     url(r'^accounts/', include('registration.backends.default.urls')),
 ]
 

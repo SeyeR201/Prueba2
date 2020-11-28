@@ -1,0 +1,16 @@
+
+{
+  "name": "productos",
+  "short_name": "productos",
+  "description": "productos",
+  "start_url": "http://localhost:8000/productos/index",
+  "display": "standalone",
+  "scope": "/",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "status_bar": "default",
+  "icons": [{"src": "static/img/logo.png", "sizes": "160x160"}],
+  "dir": "ltr",
+  "lang": "en-US"
+}

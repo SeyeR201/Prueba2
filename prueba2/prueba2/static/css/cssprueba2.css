@@ -63,3 +63,7 @@ footer {
 .carousel .carousel-item{
     width: 300px;
 }
+
+#map {
+    height: 100%;
+    }

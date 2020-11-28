@@ -19,9 +19,38 @@
             </div>
         </div>
 
+        <style>
+  	        #map {
+            height: 500px;
+            margin-right: 500px;
+            margin-left: 500px
+            }
+	    </style>
+
+        <h2>¿Dónde nos encontramos?</h2>
+        <div id ="map"> </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA1-1N_ehXnv3m_jxbLJzzVTlHnLCPcsA&callback=initMap" async defer></script>
+        <script type="text/javascript">
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -33.5925656, lng: -70.7023632},
+                zoom: 16.32
+            });
+            var marker = new google.maps.Marker({
+                position: {lat: -33.5922583, lng: -70.7027153},
+                map: map,
+            title: 'Veganx'
+                });
+            }
+        </script>
+        <br>
+        <br>
         <h2>Medios de pago aceptados:</h2>
         <!--Imagen redcompra-->
         <img id="red" src="{% static 'img/redcompra-visa.png' %}" alt="">
+
+
 
 {% endblock %}
 
